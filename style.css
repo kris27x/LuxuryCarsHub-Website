@@ -1,0 +1,1179 @@
+/* Menu page */
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+:root {
+	--color-primary: #00FFFF;
+	--color-secondary: #6495ed;
+	--color-tertiary: #001678;
+	--color-quaternary: #1d9fdb;
+	--color-quinary: #1068b0;
+	--color-senary: #0c3c8a;
+	--color-white: #ffffff;
+	--color-black: #000000;
+	--color-while-light: #c9c9c9;
+
+	--width-lg: 76%;
+	--width-md: 90%;
+	--width-sm: 94%;
+
+	--adjustment: all 400ms ease;
+
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.7;
+	color: var(--color-white);
+	background: var(--color-quaternary);
+	background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/8846.jpg");
+}
+
+.container{
+	width: var(--width-lg);
+	margin: 0 auto;
+}
+
+section{
+	padding: 6rem 0;
+}
+
+section h2{
+	text-align: center;
+	margin-bottom: 4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: 2.4rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.6rem;
+}
+
+h4 {
+	font-size: 1.3rem;
+}
+
+a {
+	color: var(--color-white);
+}
+
+img {
+	width: 100%;
+	display: block;
+	object-fit: cover;
+}
+
+button {
+	display: inline-block;
+	background: var(--color-white);
+	color: var(--color-black);
+	padding: 1rem 2rem;
+	border: 1px solid transparent;
+	font-weight: 450;
+	transition: var(--adjustment);
+}
+
+.button:hover {
+	background: transparent;
+	color: var(--color-white);
+	border: var(--color-white);
+}
+
+.btn-primary  {
+	background: #0c3c8a;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 4px;
+	border: 4px solid transparent;
+	outline: none;
+	font: inherit;
+	color: inherit;
+	transition: var(--adjustment);
+}
+
+.btn-secondary {
+	background: #0c3c8a;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 4px;
+	border: 4px solid transparent;
+	outline: none;
+	font: inherit;
+	color: inherit;
+	transition: var(--adjustment);
+
+}
+
+.btn-third {
+	background: #1d9fdb;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 4px;
+	border: 4px solid transparent;
+	outline: none;
+	font: inherit;
+	color: inherit;
+	transition: var(--adjustment);
+}
+
+nav{
+	background: transparent;
+	width: 100vw;
+	height: 6rem;
+	position: fixed;
+	top: 0;
+	z-index: 11;
+}
+/* change navbar styles using JvScript*/
+.window-scroll {
+	background: #0c3c8a;
+	box-shadow: 0 1rem 2rem rgba(96, 6, 241, 0.2);
+
+}
+
+.nav_container{
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav button{
+	display: none;
+}
+
+.nav_menu{
+	display: flex;
+	align-items: center;
+	gap: 4rem;
+}
+
+.nav_menu a { 
+	font-size: 0.95rem;
+	transition: var(--adjustment);
+}
+
+.nav_menu a:hover { 
+	color: var(--color-quinary);
+}
+
+
+header { 
+	position: relative;
+	top: 5rem;
+	overflow: hidden;
+	height: 92vh;
+	margin-bottom: 5rem;
+}
+
+.header_container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	height: 100%;
+	gap: 5rem;
+	align-items: center;
+}
+
+.header__left p {
+	margin: 1rem 0 2.4rem;
+}
+
+.cars{
+	background: var(--color-quinary);
+	height: auto;
+}
+
+.cars h1 {
+	line-height: 1;
+	margin-bottom: 3rem;
+}
+
+.cars_container{
+	display: grid;
+	grid-template-columns: 40% 60%;
+}
+
+.cars_left p{
+	margin: 1rem 0 3rem;
+}
+
+.cars_left{
+	margin-right: 2rem;
+}
+
+.cars_right{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.2rem;
+}
+
+.Cars{
+	background: var(--color-senary);
+	padding: 2rem;
+	border-radius: 2rem;
+	transition: var(--adjustment);
+}
+
+.Cars:hover {
+	box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+	z-index: 1;
+}
+
+.cars_icon{
+	background: var(--color-quaternary);
+	padding: 0.7rem;
+	border-radius: 0.9rem;
+}
+.Cars:nth-child(1) .cars_icon{
+	background: var(--color-tertiary);
+}
+.Cars:nth-child(3) .cars_icon{
+	background: var(--color-tertiary);
+}
+.Cars:nth-child(4) .cars_icon{
+	background: var(--color-tertiary);
+}
+.Cars:nth-child(6) .cars_icon{
+	background: var(--color-tertiary);
+}
+
+.cars h5 {
+	margin: 2rem 0 1rem;
+}
+
+.cars p {
+	font-size: 0.85rem;
+}
+
+.Localisations{
+	margin-top: 0rem;
+}
+
+.localisations_container{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3rem;
+	padding-top: 2rem;
+
+}
+
+.localisation{
+	background-color: var(--color-senary);
+	text-align: center;
+	border: 4px solid transparent;
+	transition: var(--adjustment);
+	opacity: 1;
+	backdrop-filter: blur(0);
+}
+
+.localisation:hover {
+	background: transparent;
+	border-color: var(--color-quinary);
+	opacity: 0.7;
+	backdrop-filter: blur(5px);
+}
+.localisation_info{
+	padding: 2rem;
+}
+
+.localisation_info p{
+	margin: 1.2rem 0 2rem;
+	font-size: 0.9rem;
+
+}
+
+
+.Questions{
+	background: var(--color-quinary);
+	box-shadow: inset 0 0  3rem rgba(0, 0, 0, 0.5);
+}
+
+.Questions h2 {
+	margin-top: 3rem;
+}
+
+.questions_container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+	padding-top: 2rem;
+	margin-bottom: 3rem;
+
+}
+
+.question {
+	padding: 2rem;
+	display: flex;
+	align-items: center;
+	gap: 1.4rem;
+	height: fit-content;
+	background: var(--color-senary);
+	cursor: pointer;
+}
+
+.question h4{
+	font-size: 1rem;
+	line-height: 2.2;
+}
+
+.question_icon {
+	align-self: flex-start;
+	font-size: 1.2rem;
+}
+
+.question p {
+	margin-top: 0.8rem;
+	display: none;
+}
+
+.question.open p{
+	display: block;
+}
+
+.slider{
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 5rem;
+}
+
+.experience {
+    padding-top: 2rem;
+    display: none;
+}
+
+.images{
+	width: 6rem;
+	height: 6rem;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0 auto 1rem;
+	border: 1rem solid var(--color-senary);
+}
+.experience_info{
+	text-align: center;
+}
+.experience_body{
+	background: #0c3c8a;
+	padding: 2rem;
+	margin-top: 3rem;
+	position: relative;
+}
+.experience_body::before{
+	content: "";
+	display: block;
+	background:linear-gradient(
+		135deg,
+		transparent,
+		var(--color-senary),
+		var(--color-senary)
+		);
+	width: 3rem;
+	height: 3rem;
+	position: absolute;
+	left: 48%;
+	top: -1.5rem;
+	transform: rotate(45deg);
+}
+
+.prevBtn,
+.nextBtn {
+    position: absolute;
+    top: 92%;
+    transform: translateY(-50%);
+    width: 7rem;
+    height: 4rem;
+	border: 1px solid transparent;
+    background-color: var(--color-senary);
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.prevBtn {
+    left: 0rem;
+}
+
+.nextBtn {
+    right: 0rem;
+}
+
+.active {
+    display: block;
+}
+
+.inactive {
+    display: none;
+}
+
+
+footer{
+	background: var(--color-quinary);
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	font-size: 0.9rem;
+}
+
+.footer_container{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 5rem;
+}
+
+.footer_container > div h4 {
+	margin-bottom: 1.2rem;
+}
+
+.footer_1 p {
+	margin: 0 0 2rem;
+}
+
+footer ul li {
+	margin-bottom: 0.7rem;
+}
+
+footer ul li a:hover {
+	text-decoration: underline;
+}
+
+.footer_socialmedia {
+	display: flex;
+	gap: 1rem;
+	font-size: 1.2rem;
+	margin-top: 2rem;
+}
+.footer_brand {
+	text-align: center;
+	margin-top: 4rem;
+	padding: 1.2rem 0;
+	border-top: 1px solid var(--color-quaternary);
+}
+
+
+/* About page */
+
+.history_about {
+	margin-top: 3rem;
+}
+
+.history_about-container {
+	display: grid;
+	grid-template-columns: 40% 60%;
+	gap: 5rem;
+}
+
+.history_about-right > p {
+
+	margin: 1.6rem 0 2.5rem;
+}
+
+.about_cards {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1.5rem;
+}
+
+.about_card {
+	background: var(--color-quinary);
+	padding: 1.6rem;
+	border-radius: 1rem;
+	text-align: center;
+	transition: var(--adjustment);
+}
+
+.about_card:hover {
+	background: var(--color-senary);
+	box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+
+.about_icon {
+	background: var(--color-secondary);
+	padding: 0.6rem;
+	border-radius: 1rem;
+	display: inline-block;
+	margin-bottom: 2rem;
+	font-size: 1rem;
+}
+
+.about_card:nth-child(2)
+.about_icon {
+	background:var(--color-tertiary);
+
+}
+
+.about_card {
+	margin-top: 1rem;
+}
+
+.member {
+	background: var(--color-quinary);
+	box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.25);
+}
+.member h2 {
+	margin-bottom: 2rem;
+}
+
+.member_container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr)
+	;
+	gap: 2rem;
+}
+
+.member_people {
+	background: var(--color-senary);
+	padding: 2rem;
+	border: 4px solid transparent;
+	transition: var(--adjustment);
+	position: relative;
+	overflow: hidden;
+}
+
+.member_people:hover .member_people-socialmedia {
+	right: 0;
+}
+
+.member_people:hover {
+	background: transparent;
+	border-color: var(--color-senary);
+}
+.member_people-image img {
+	filter: saturate(0);
+}
+.member_people:hover img {
+	filter: saturate(1);
+}
+.member_people-data *{
+	text-align: center;
+	margin-top: 1.4rem;
+}
+
+.member_people-data p {
+	color: var(--color-while-light);
+}
+.member_people-socialmedia{
+	position: absolute;
+	top: 50%;
+	right: -100%;
+	display: flex;
+	flex-direction: column;
+	background: var(--color-senary);
+	border-radius: 1rem 0 0 1rem;
+	box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.25);
+	transition: var(--adjustment);
+}
+
+.member_people-socialmedia a {
+	padding: 1rem;
+}
+
+/* Buy/Rent page */
+.luxurycar {
+	margin-top: 2rem;
+}
+
+.luxurycar .search_cars {
+	position: relative;
+	height: 42px;
+	max-width: 250px;
+	margin: 0 auto;
+	margin-bottom: 2rem;
+}
+
+.search_cars input {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	outline: none;
+	border: none;
+	background-color: #001678;
+	border-radius: 6px;
+	padding: 10px;
+}
+
+.search_cars i {
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	padding: 10px;
+}
+
+.luxurycar_container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3rem;
+	padding-top: 2rem;
+}
+
+.luxurycars{
+	background-color: var(--color-senary);
+	text-align: center;
+	border: 3px solid transparent;
+	transition: var(--adjustment);
+	opacity: 1;
+	backdrop-filter: blur(0);
+}
+
+.luxurycars:hover {
+	background: transparent;
+	border-color: var(--color-quinary);
+	opacity: 0.7;
+	backdrop-filter: blur(5px);
+}
+
+.luxurycars_info{
+	padding: 2rem;
+}
+
+.luxurycars_info p{
+	margin: 1.2rem 0 2rem;
+	font-size: 0.9rem;
+}
+
+.toast {
+	position: fixed;
+	left: 50%;
+	top: 46%;
+	transform: translate(-50%, -50%);
+	background-color: #001678;
+	color: #fff;
+	padding: 1rem;
+	border-radius: 6px;
+	text-align: center;
+	display: none;
+}
+
+
+
+/* Contact page */
+
+.contact h2 {
+	margin-bottom: 10rem;
+	margin-top: 4rem;
+}
+
+.location h1 {
+	position: absolute;
+	right: 41%;
+	margin-bottom: 0rem;
+	margin-top: 0rem;
+}
+
+.contact_container {
+	background: var(--color-senary);
+	padding: 4rem;
+	display: grid;
+	grid-template-columns: 40% 60%;
+	gap: 4rem;
+	height: 32rem;
+	width: 80%;
+	margin: 7rem auto;
+	border-radius: 1rem;
+	margin-bottom: 0rem;
+}
+
+.contact_aside{
+	background-color: var(--color-quinary);
+	padding: 3rem;
+	border-radius: 1rem;
+	position: relative;
+	bottom: 10rem;
+}
+
+.aside_image {
+	max-width: 100%;
+}
+
+.contact_aside h2 {
+	text-align: left;
+	margin-bottom: 1rem;
+}
+
+.contact_aside p {
+	margin-top: 1rem;
+	font-size: 0.9rem;
+	margin-bottom: 2rem;
+}
+.contact_info li {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.contact_socialmedia {
+	display: flex;
+	gap: 0.8rem;
+	margin-top: 3rem;
+}
+.contact_socialmedia a {
+	background:var(--color-senary);
+	padding: 0.5rem;
+	border-radius: 50%;
+	font-size: 0.9rem;
+	transition: var(--adjustment);
+}
+
+.contact_socialmedia a:hover {
+	background: transparent;
+}
+
+.contact_form {
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+	margin-right: 4rem;
+}
+
+.form_n {
+	display: flex;
+	gap: 1.2rem;
+}
+
+.contact_form input[type="text"] {
+	width: 90%;
+
+}
+
+input, 
+textarea {
+	width: 100%;
+	padding: 1rem;
+	background: var(--color-quinary);
+	color: var(--color-white);
+
+}
+
+.contact_form button {
+	width: max-content;
+	margin-top: 1rem;
+	cursor: pointer;
+}
+
+.maps-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 3rem;
+	grid-gap: 20px;
+	margin-right: 2%;
+	margin-left: 2%;
+	padding-top: 2rem;
+}
+  
+.map h2 {
+	font-size: 2rem;
+	color: #fff;
+	margin: 0;
+}
+  
+.map-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+} 
+
+  /* style each map individually */
+.map.madrid {
+	background-color: #FFAC1C;
+}
+  
+.map.berlin {
+	background-color: #7393B3;
+}
+  
+.map.london {
+	background-color: #f94144;
+}
+  
+.map.leicester {
+	background-color: #577590;
+}
+
+
+/* 
+You will probably need at least two media queries to handle larger screens.
+Your queries should be configured to work with your content
+Tablet screen
+*/
+@media screen and (max-width: 1024px) {
+	/* Code inside media queries should be indented one step further. */
+	/* 
+	Main Menu (index.html)
+	*/
+	.container {
+		width: var(--width-md);
+	}
+	h1 {
+		font-size: 2.2rem;
+	}
+	h2 {
+		font-size: 1.7em;
+	}
+	h3 {
+		font-size: 1.4rem;
+	}
+	h4 {
+		font-size: 1.2rem;
+	}
+
+	nav button {
+		display: inline-block;
+		background: transparent;
+		font-size: 1.8rem;
+		color: var(--color-white);
+		cursor: pointer;
+	}
+
+	nav button#close-button{
+		display: none;
+	}
+
+	.nav_menu {
+		position: fixed;
+		top: 5rem;
+		right: 5%;
+		height: fit-content;
+		width: 18rem;
+		flex-direction: column;
+		gap: 0;
+		display: none;
+	}
+	.nav_menu li {
+		width: 100%;
+		height: 5.8rem;
+		animation: animateMenu 400ms linear backwards;
+		transform-origin: top right;
+	}
+
+	.nav_menu li:nth-child(2) {
+		animation-delay: 100ms;
+	}
+
+	.nav_menu li:nth-child(3) {
+		animation-delay: 200ms;
+	}
+
+	.nav_menu li:nth-child(4) {
+		animation-delay: 400ms;
+	}
+
+	@keyframes animateMenu {
+		0%{
+			transform: rotate(-100deg) rotateX(100deg) scale(0.1);
+		}
+		100%{
+			transform: rotate(0) rotateX(0) scale(1);
+			opacity: 1;
+		}
+		
+	}
+
+	.nav_menu li a {
+		background: var(--color-senary);
+		box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+		width: 100%;
+		height: 100%;
+		display: grid;
+		place-items: center;
+	}
+
+	.nav_menu li a:hover {
+		background: var(--color-quaternary);
+		color: var(--color-white);
+	}
+
+	header {
+		height: auto;
+		margin-bottom: 4rem;
+	}
+
+	.header_container {
+		gap: 0;
+		padding-bottom: 5rem;
+	}
+
+	.cars{
+		height: auto;
+	}
+
+	.cars_container{
+		grid-template-columns: 1fr;
+		gap: 3rem;
+	}
+
+	.cars_left {
+		margin-right: 0;
+	}
+
+	.Localisations {
+		margin-top: 0;
+
+	}
+
+	.localisations_container {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.questions_container {
+		grid-template-columns: 1fr;
+	}
+	
+	.Questions {
+		padding: 1.5rem;
+	}
+	.experience_body::before{
+		display: block;
+		background:linear-gradient(
+			135deg,
+			transparent,
+			var(--color-senary),
+			var(--color-senary)
+			);
+		width: 3rem;
+		height: 3rem;
+		position: absolute;
+		left: 46.5%;
+		top: -1.5rem;
+		transform: rotate(45deg);
+	}
+
+	.footer_container {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	/*
+	About page (about.html)
+	*/
+
+	.history_about {
+		margin-top: 2rem;
+	}
+
+	.history_about-container {
+		grid-template-columns: 1fr;
+		gap: 4rem;
+	}
+	.history_about-left {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.member_container {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1.5rem;
+	}
+
+	.member_people {
+		padding: 1rem;
+	}
+
+	/*
+	Buy/Rent page (about.html)
+	*/
+
+	.luxurycar {
+		margin-top: 0;
+	}
+
+	.luxurycar_container {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	/*
+	Contact page (contact.html)
+	*/
+	.contact_container {
+		gap: 1.5rem;
+		margin-top: 4rem;
+		height: auto;
+		padding: 1.5rem;
+	}
+
+	.contact_aside {
+		width: auto;
+		padding: 1.5rem;
+		bottom: 0;
+	}
+
+	.contact_form {
+		align-self: center;
+		margin-right: 1.5rem;
+	}
+
+	.maps-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.location h1 {
+		position: absolute;
+		right: 38%;
+		margin-bottom: 0rem;
+		margin-top: 0rem;
+	}
+
+}
+@media screen and (max-width: 600px) {
+	/* 
+	Main page (about.html)
+	*/
+	.container {
+		width:var(--width-sm);
+	}
+	.nav_menu {
+		right: 3%;
+	}
+	header {
+		height: 100vh;
+	}
+	.header_container {
+		display: grid;
+		grid-template-columns: 60% 75%;
+	}
+	.header__left p {
+		margin-bottom: 1.3rem;
+	}
+	.header__left a {
+		margin-bottom: 1.3rem;
+	}
+	.header__right {
+		margin-top: 1.5rem;
+		width: 53%;
+	}
+	.cars_right {
+		grid-template-columns: 1fr 1fr;
+		gap: 0.7rem;
+	}
+	.Cars {
+		padding: 1rem;
+		border-radius: 1rem;
+		margin-top: 0;
+	}
+	.cars_icon {
+		margin-top: 4px;
+		display: inline-block;
+	}
+	.cars_container {
+		margin-top: 0;
+	}
+	.localisations_container {
+		grid-template-columns: 1fr;
+	}
+	.experience_body {
+		padding: 1.2rem;
+	}
+	.experience_body::before{
+		display: block;
+		background:linear-gradient(
+			135deg,
+			transparent,
+			var(--color-senary),
+			var(--color-senary)
+			);
+			width: 3rem;
+			height: 3rem;
+			position: absolute;
+			left: 44.3%;
+			top: -1.5rem;
+			transform: rotate(45deg);
+		}
+	.footer_container {
+		grid-template-columns: 1fr;
+		text-align: center;
+		gap: 2rem;
+	}
+	.footer_1 p {
+		margin: 1rem auto;
+	}
+	.footer_socialmedia {
+		justify-content: center;
+	}
+	/*
+	About page (about.html)
+	*/
+	.about_cards {
+		grid-template-columns: 1fr 1fr;
+		gap: 0.7rem;
+	}
+	.member_container {
+		grid-template-columns: 1fr 1fr;
+		gap: 0.7rem;
+	}
+	.member_people {
+		padding: 0;
+	}
+	.member_people p {
+		margin-bottom: 1.5rem;
+	}
+
+	/*
+	Buy/Rent page (about.html)
+	*/
+
+	.luxurycar_container {
+		grid-template-columns: 1fr;
+	}
+
+	/*
+	Contact page (contact.html)
+	*/
+	.contact_container {
+		gap: 3rem;
+		margin-top: 0rem;
+		margin-bottom: 0rem;
+		padding: 0;
+		grid-template-columns: 1fr;
+	}
+
+	.contact_form {
+		margin: 0 1.5rem 3rem;
+	}
+
+	.form_n {
+		flex-direction: column;
+	}
+
+	.form_n input[type="text"] {
+		width: 100%;
+	}
+	.maps-grid {
+		grid-template-columns: 1fr;
+		margin-right: 5%;
+	    margin-left: 5%;
+	}
+
+	.contact h2 {
+		margin-bottom: 4rem;
+		margin-top: 4rem;
+	}
+
+	.location h1 {
+		position: absolute;
+		right: 30%;
+		margin-bottom: 0rem;
+		margin-top: 0rem;
+	}
+}
